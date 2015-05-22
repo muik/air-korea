@@ -59,7 +59,7 @@ module AirKorea
         end
         set_province_to_regions table
 
-        m.post_match.match('cols="104">([^<]+)</textarea')
+        m = m.post_match.match('cols="104">([^<]+)</textarea')
         analysis = m[1]
 
         {
